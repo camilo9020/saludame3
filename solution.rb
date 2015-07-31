@@ -7,7 +7,6 @@ erb :home
 end
 
 post '/hola' do
-
-"Hola #{params[:hola].capitalize}"
-
+@name= params[:hola].capitalize
+erb :greet
 end
