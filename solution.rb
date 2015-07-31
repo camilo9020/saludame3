@@ -6,7 +6,7 @@ get '/' do
 erb :home
 end
 
-post '/hola' do
-@name= params[:hola].capitalize
+get '/hola' do
+@name= params[:hola]
 erb :greet
 end
